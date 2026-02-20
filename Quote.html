@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ 
+    <title>Select Plan | LogoIpsum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .navy-bg { background-color: #0f2b50; }
+        .gold-text { color: #f5a623; }
+        .gold-bg { background-color: #f5a623; }
+    </style>
+</head>
+<body class="bg-white flex flex-col min-h-screen">
+
+    <header class="navy-bg text-white py-4 px-6">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <a href="home.html" class="text-sm flex items-center gap-2"><i class="fa-solid fa-arrow-left"></i> Back</a>
+            <div class="font-bold text-xl flex items-center gap-2"><i class="fa-solid fa-shield-halved"></i> logoipsum</div>
+            <div class="w-10"></div>
+        </div>
+    </header>
+
+    <div class="bg-white py-6 border-b">
+        <div class="max-w-4xl mx-auto px-4 flex justify-between text-[10px] sm:text-xs font-bold text-gray-400">
+            <div class="flex flex-col items-center gap-2">
+                <div class="w-6 h-6 rounded-full bg-navy-bg text-white flex items-center justify-center"><i class="fa-solid fa-check"></i></div>
+                <span class="text-blue-900">Get Quote</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+                <div class="w-6 h-6 rounded-full bg-sky-500 text-white flex items-center justify-center"><i class="fa-solid fa-plane"></i></div>
+                <span class="text-blue-900">Plan Option</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+                <div class="w-6 h-6 rounded-full border-2 border-gray-200"></div>
+                <span>Travellers</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+                <div class="w-6 h-6 rounded-full border-2 border-gray-200"></div>
+                <span>Payment</span>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-12 border rounded-lg overflow-hidden shadow-sm">
+            
+            <div class="hidden md:block md:col-span-4 bg-white">
+                <div class="h-64 border-b"></div>
+                <div class="p-4 h-16 border-b text-sm font-medium flex items-center">Cancellation or trip interruption <i class="fa-solid fa-circle-info ml-2 text-gray-300"></i></div>
+                <div class="p-4 h-16 border-b text-sm font-medium flex items-center">Luggage and personal effects <i class="fa-solid fa-circle-info ml-2 text-gray-300"></i></div>
+                <div class="p-4 h-16 border-b text-sm font-medium flex items-center">Travel Delay <i class="fa-solid fa-circle-info ml-2 text-gray-300"></i></div>
+                <div class="p-4 h-16 border-b text-sm font-medium flex items-center bg-gray-50">Personal Liability <i class="fa-solid fa-circle-info ml-2 text-gray-300"></i></div>
+            </div>
+
+            <div class="col-span-1 md:col-span-4 border-r bg-gray-50/50">
+                <div class="h-64 p-6 flex flex-col items-center justify-center text-center border-b">
+                    <div class="w-12 h-12 navy-bg rounded-full flex items-center justify-center text-white font-bold mb-4">V</div>
+                    <h2 class="text-xl font-bold text-gray-700">VOYAGER</h2>
+                    <p class="text-gray-400 line-through text-sm">$17.37</p>
+                    <div class="text-3xl font-bold text-blue-900">$15<span class="text-lg">.98</span></div>
+                    <p class="text-[10px] text-gray-400 mt-2">Total Cost</p>
+                </div>
+                <div class="p-4 h-16 border-b text-center font-bold text-gray-700 flex items-center justify-center">$1,000</div>
+                <div class="p-4 h-16 border-b text-center font-bold text-gray-700 flex items-center justify-center">$500</div>
+                <div class="p-4 h-16 border-b text-center text-gray-400 flex items-center justify-center italic">not available</div>
+                <div class="p-4 h-16 border-b text-center text-gray-400 flex items-center justify-center italic bg-gray-50">not available</div>
+                <div class="p-6">
+                    <button class="w-full navy-bg text-white font-bold py-3 rounded uppercase text-xs">Choose Plan</button>
+                </div>
+            </div>
+
+            <div class="col-span-1 md:col-span-4 bg-white border-t-4 border-yellow-500 md:border-t-0 shadow-lg z-10">
+                <div class="h-64 p-6 flex flex-col items-center justify-center text-center border-b">
+                    <div class="w-12 h-12 gold-bg rounded-full flex items-center justify-center text-white font-bold mb-4">P</div>
+                    <h2 class="text-xl font-bold text-gray-700">VOYAGER PLUS</h2>
+                    <p class="text-gray-400 line-through text-sm">$44.94</p>
+                    <div class="text-3xl font-bold gold-text">$41<span class="text-lg">.34</span></div>
+                    <p class="text-[10px] text-gray-400 mt-2">Total Cost</p>
+                </div>
+                <div class="p-4 h-16 border-b flex items-center justify-center">
+                    <select class="border rounded px-2 py-1 text-sm font-bold"><option>$4,000</option></select>
+                </div>
+                <div class="p-4 h-16 border-b flex items-center justify-center">
+                    <select class="border rounded px-2 py-1 text-sm font-bold"><option>$1,000</option></select>
+                </div>
+                <div class="p-4 h-16 border-b text-center font-bold flex items-center justify-center">$1,000</div>
+                <div class="p-4 h-16 border-b text-center font-bold flex items-center justify-center bg-gray-50">$2,500,000</div>
+                <div class="p-6">
+                    <button class="w-full gold-bg text-white font-bold py-3 rounded uppercase text-xs">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="navy-bg text-gray-400 py-6 px-6 text-[10px] text-center">
+        ©2025 Logo Ipsum. All Rights Reserved.
+    </footer>
+
+  
+</body>
+</html>
